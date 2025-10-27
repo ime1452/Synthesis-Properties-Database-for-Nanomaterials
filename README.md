@@ -4,10 +4,11 @@ Our goal is to create a database of nanomaterials containing detailed synthesis 
 ## Project Structure
 ```
 main/
-├── train.py              # Single-GPU training script
-├── train_config.yaml     # Training configuration file
-├── requirements.txt      # Python dependencies
-├── Qwen3-14B/            # Pre-trained model directory (Please download from https://huggingface.co/Qwen/Qwen3-14B)
-├── dataset_info.json     # Training Set Format
-└── saves/                # Model save directory
+├── train.py                 # Single-GPU training script
+├── train_config.yaml        # Training configuration file
+├── test_model_optimized.py  # Multi-threaded inference script
+├── requirements.txt         # Python dependencies
+├── Qwen3-14B/               # Pre-trained model directory (Please download from https://huggingface.co/Qwen/Qwen3-14B)
+├── dataset_info.json        # Training Set Format
+└── saves/                   # Model save directory
 ```
