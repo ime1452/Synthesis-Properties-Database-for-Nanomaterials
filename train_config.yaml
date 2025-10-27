@@ -1,0 +1,60 @@
+### model
+model_name_or_path: /root/autodl-tmp/Qwen3-14B
+enable_liger_kernel: true  # 启用Liger Kernel以减少显存使用
+flash_attn: fa2
+
+### method
+stage: sft
+do_train: true
+finetuning_type: lora
+lora_target: all
+lora_rank: 12
+lora_alpha: 24
+lora_dropout: 0.05  # 添加少量dropout防止过拟合
+
+### dataset
+dataset: raw_training_data
+dataset_dir: /root/autodl-tmp
+template: qwen3
+cutoff_len: 8192
+overwrite_cache: true
+preprocessing_num_workers: 8 # 减少预处理工作进程
+
+### output
+output_dir: /root/autodl-tmp/saves/qwen3-14B-lora-1020(3)
+logging_steps: 10
+save_steps: 369
+plot_loss: true
+overwrite_output_dir: true
+
+### train
+per_device_train_batch_size: 8
+gradient_accumulation_steps: 2
+learning_rate: 4e-5 #略微降低学习率，更稳定
+num_train_epochs: 5 # 增加训练轮数
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+max_grad_norm: 1.0  # 添加梯度裁剪
+dataloader_num_workers: 8 # 减少数据加载器工作进程
+gradient_checkpointing: true  # 启用梯度检查点以节省显存
+
+## eval
+val_size: 0.1  # 从训练数据中划分10%作为验证集
+per_device_eval_batch_size: 1  # 保持最小评估批处理大小
+eval_strategy: steps  # 启用评估
+eval_steps: 369
+do_eval: true  # 启用评估
+
+## early stopping and model selection
+load_best_model_at_end: true
+metric_for_best_model: "eval_loss"
+greater_is_better: false
+
+### optimization
+
+save_total_limit: -1 # 保存所有检查点
+
+### logging
+report_to: none  # 禁用wandb等外部日志

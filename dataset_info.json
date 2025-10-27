@@ -1,0 +1,29 @@
+{
+  "raw_training_data": {
+    "file_name": "raw_data_filtered_8192.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "test_data": {
+    "file_name": "test_labels.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "original_training_data": {
+    "file_name": "original_labels.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  }  
+}
