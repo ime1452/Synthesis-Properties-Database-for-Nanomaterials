@@ -96,7 +96,7 @@ python test_model_optimized.py
 - The best results reported in the paper are located in the `results/` directory
 
 ## Database Storage
-- Coming soon
+- https://huggingface.co/datasets/Kai-gu/Synthesis-Properties-Database-for-Nanomaterials
 
 ## Citation
 If you find this project helpful, please cite our article:
