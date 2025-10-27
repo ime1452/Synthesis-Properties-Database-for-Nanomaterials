@@ -79,7 +79,7 @@ llamafactory-cli train train_config.yaml
 ## Model Saving
 
 - The fine-tuned results reported in the paper are demonstrated in the `saves/` directory
-https://huggingface.co/datasets/Kai-gu/Synthesis-Properties-Database-for-Nanomaterials
+https://huggingface.co/Kai-gu/Qwen3-14B-finetune/tree/main
 
 ## Model Inference
 
