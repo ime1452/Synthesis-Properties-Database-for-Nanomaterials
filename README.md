@@ -77,4 +77,4 @@ llamafactory-cli train train_config.yaml
 
 ## Model Saving
 
-- The fine-tuned results reported in the paper are demonstrated in the saves/ directory
+- The fine-tuned results reported in the paper are demonstrated in the 'saves/' directory
