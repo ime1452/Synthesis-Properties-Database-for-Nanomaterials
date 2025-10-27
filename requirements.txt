@@ -1,0 +1,61 @@
+# Core dependencies for Qwen3-14B LoRA fine-tuning
+# Based on LLaMA-Factory framework
+
+# Core ML frameworks
+torch>=2.8.0
+torchvision>=0.23.0
+transformers>=4.56.2
+accelerate>=1.10.1
+peft>=0.17.1
+trl>=0.9.6
+
+# Training optimization
+bitsandbytes>=0.48.1
+xformers>=0.0.32.post2
+flash-attn>=2.0.0
+liger-kernel>=0.3.0
+
+# Data processing
+datasets>=2.0.0
+tokenizers>=0.22.1
+numpy>=1.26.4
+pandas>=2.3.3
+pyarrow>=21.0.0
+
+# Configuration and utilities
+pyyaml>=6.0.3
+typer>=0.19.2
+tyro>=0.8.14
+tqdm>=4.67.1
+rich>=14.1.0
+omegaconf>=2.3.0
+
+# Model evaluation
+rouge-chinese>=1.0.3
+nltk>=3.9.2
+scikit-learn>=1.7.2
+
+# Web interface (optional)
+fastapi>=0.100.0
+uvicorn>=0.37.0
+starlette>=0.48.0
+python-multipart>=0.0.20
+
+# Audio processing (if needed)
+soundfile>=0.13.1
+librosa>=0.10.0
+
+# Monitoring and logging
+tensorboard>=2.0.0
+wandb>=0.15.0
+
+# Development tools
+ruff>=0.13.2
+black>=23.0.0
+
+# LLaMA-Factory specific
+llamafactory>=0.9.0
+
+# CUDA support (install based on your CUDA version)
+# nvidia-cuda-runtime-cu12>=12.8.90
+# nvidia-cudnn-cu12>=9.10.2.21
