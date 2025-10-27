@@ -52,7 +52,7 @@ pip install flash-attn --no-build-isolation
 
 ## Data Preparation
 
-- Place the training data in the `main` directory. For the file format and name, refer to raw_data_filtered_8192.json.
+- Place the training data in the `main` directory. For the file format and name, refer to `raw_data_filtered_8192.json`
 
 ## Model Preparation
 
