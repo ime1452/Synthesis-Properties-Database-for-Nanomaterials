@@ -78,3 +78,14 @@ llamafactory-cli train train_config.yaml
 ## Model Saving
 
 - The fine-tuned results reported in the paper are demonstrated in the `saves/` directory
+
+## Model Inference
+
+### Prepare Test Set
+- Refer to `test_labels.json` for the file format and name.
+
+### Start the Inference Script
+
+```bash
+python test_model_optimized.py
+```
