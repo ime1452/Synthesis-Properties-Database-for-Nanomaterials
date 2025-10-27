@@ -12,6 +12,7 @@ main/
 ├── dataset_info.json              # Training Set Format
 ├── raw_data_filtered_8192.json    # Examples in the training set
 ├── test_labels.json               # Test set
+├── results/                       # The results of the test set in the paper.
 └── saves/                         # Model save directory
 ```
 
@@ -78,14 +79,28 @@ llamafactory-cli train train_config.yaml
 ## Model Saving
 
 - The fine-tuned results reported in the paper are demonstrated in the `saves/` directory
+https://huggingface.co/datasets/Kai-gu/Synthesis-Properties-Database-for-Nanomaterials
 
 ## Model Inference
 
 ### Prepare Test Set
-- Refer to `test_labels.json` for the file format and name.
+- Refer to `test_labels.json` for the file format and name
 
 ### Start the Inference Script
 
 ```bash
 python test_model_optimized.py
 ```
+
+### Inference Results
+- The best results reported in the paper are located in the `results/` directory
+
+## Database Storage
+- Coming soon
+
+## Citation
+If you find this project helpful, please cite our article:
+```
+coming soon
+```
+If you have any questions, please contact kai_gu94@163.com

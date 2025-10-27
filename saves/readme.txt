@@ -1,0 +1,1 @@
+https://huggingface.co/datasets/Kai-gu/Synthesis-Properties-Database-for-Nanomaterials

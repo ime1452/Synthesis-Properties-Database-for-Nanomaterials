@@ -1,0 +1,1 @@
+Please download from https://huggingface.co/Qwen/Qwen3-14B
