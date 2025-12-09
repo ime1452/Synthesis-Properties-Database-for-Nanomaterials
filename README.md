@@ -13,7 +13,8 @@ main/
 ├── raw_data_filtered_8192.json    # Examples in the training set
 ├── test_labels.json               # Test set
 ├── results/                       # The results of the test set in the paper.
-└── saves/                         # Model save directory
+├── saves/                         # Model save directory
+└── inverse_design/                # Use of this database for inverse design of nanomaterials
 ```
 
 ## Environment Requirements
