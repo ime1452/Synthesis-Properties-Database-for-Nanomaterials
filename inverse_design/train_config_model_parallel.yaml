@@ -1,0 +1,62 @@
+### model
+model_name_or_path: /home/ubuntu/project/nanodatabase/qwen3-0.6b
+flash_attn: fa2
+
+### method
+stage: sft
+do_train: true
+finetuning_type: full
+
+### dataset
+dataset: dataset
+dataset_dir: /home/ubuntu/project/nanodatabase/application
+template: qwen3
+cutoff_len: 2048
+overwrite_cache: true
+preprocessing_num_workers: 8
+
+
+### output
+output_dir: /home/ubuntu/project/nanodatabase/application/saves/qwen3-0.6b-lr3e-5-bs8-ga8
+logging_steps: 10
+save_steps: 368
+plot_loss: true
+overwrite_output_dir: true
+
+### train
+per_device_train_batch_size: 8
+gradient_accumulation_steps: 8
+learning_rate: 3e-5
+num_train_epochs: 5
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+max_grad_norm: 1.0
+dataloader_num_workers: 4
+gradient_checkpointing: true
+deepspeed: /home/ubuntu/project/nanodatabase/application/ds_config_zero3_model_parallel.json
+max_steps: -1
+
+### eval
+val_size: 0.1
+per_device_eval_batch_size: 4
+eval_strategy: steps
+eval_steps: 368
+do_eval: true
+
+### early stopping and model selection
+load_best_model_at_end: true
+metric_for_best_model: "eval_loss"
+greater_is_better: false
+
+### optimization
+save_total_limit: -1 
+
+### logging
+report_to: none
+
+### multi-gpu settings for model parallel
+ddp_find_unused_parameters: false
+dataloader_pin_memory: true
+remove_unused_columns: true
