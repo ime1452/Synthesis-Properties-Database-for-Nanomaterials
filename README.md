@@ -102,6 +102,9 @@ python test_model_optimized.py
 ## Citation
 If you find this project helpful, please cite our article:
 ```
+DOI：10.1021/acsnano.6c03070
+```
+```
 @misc{gu2026largescalenanocrystaldatabasealigned,
       title={A large-scale nanocrystal database with aligned synthesis and properties enabling generative inverse design}, 
       author={Kai Gu and Yingping Liang and Senliang Peng and Aotian Guo and Haizheng Zhong and Ying Fu},
