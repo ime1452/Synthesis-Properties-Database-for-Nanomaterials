@@ -105,14 +105,23 @@ If you find this project helpful, please cite our article:
 DOI：10.1021/acsnano.6c03070
 ```
 ```
-@misc{gu2026largescalenanocrystaldatabasealigned,
-      title={A large-scale nanocrystal database with aligned synthesis and properties enabling generative inverse design}, 
-      author={Kai Gu and Yingping Liang and Senliang Peng and Aotian Guo and Haizheng Zhong and Ying Fu},
-      year={2026},
-      eprint={2601.02424},
-      archivePrefix={arXiv},
-      primaryClass={cond-mat.mtrl-sci},
-      url={https://arxiv.org/abs/2601.02424}, 
+@article{doi:10.1021/acsnano.6c03070,
+author = {Gu, Kai and Liang, Yingping and Peng, Senliang and Guo, Aotian and Fu, Ying and Zhong, Haizheng},
+title = {A Large-Scale Nanocrystal Database with Aligned Synthesis and Properties, Enabling Generative Inverse Design},
+journal = {ACS Nano},
+volume = {20},
+number = {24},
+pages = {17413-17422},
+year = {2026},
+doi = {10.1021/acsnano.6c03070},
+    note ={PMID: 42253088},
+
+URL = {     
+        https://doi.org/10.1021/acsnano.6c03070
+},
+eprint = {    
+        https://doi.org/10.1021/acsnano.6c03070
+}
 }
 ```
 If you have any questions, please contact kai_gu94@163.com
